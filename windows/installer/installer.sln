@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "installer", "installer.vdproj", "{13534C01-C149-4850-B064-ABCA9C5E7CFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13534C01-C149-4850-B064-ABCA9C5E7CFA}.Debug|Default.ActiveCfg = Debug
+		{13534C01-C149-4850-B064-ABCA9C5E7CFA}.Debug|Default.Build.0 = Debug
+		{13534C01-C149-4850-B064-ABCA9C5E7CFA}.Release|Default.ActiveCfg = Release
+		{13534C01-C149-4850-B064-ABCA9C5E7CFA}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

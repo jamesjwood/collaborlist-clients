@@ -1,0 +1,31 @@
+<html>
+<script>
+    var createIframe = function(){
+        document.write('<p>Preloading....</p>');
+        var loaderURL = "http://collaborlist.com/loader.html";
+        var ifrm = document.createElement("IFRAME");
+
+        ifrm.setAttribute("src", loaderURL);
+        ifrm.style.display = 'none';
+        ifrm.onload = function(){
+            //should be in appcache now, save to redirect;
+            //document.location=loaderURL;
+            console.log('loaded');
+            console.dir(ifrm);
+
+            if(ifrm.contentDocument.URL=='cef-error:')
+            {
+                document.write('<p>Error loading app, you must be online the first time you run the app</p>');
+            }
+            else
+            {
+                document.location=loaderURL;
+            }
+        }
+        document.body.appendChild(ifrm);
+    };
+</script>
+<body onload="createIframe()">
+
+</body>
+</html>
